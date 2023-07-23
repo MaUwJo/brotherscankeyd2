@@ -4,6 +4,11 @@ Copyright (C) 2016-2020 Frank Abelbeck <frank.abelbeck@googlemail.com>
 
 License: GPL 3
 
+## Changes from MaUwJo
+in script bskd2_scan2pdfsw
+use of GraphicsMagick (http://www.graphicsmagick.org/) - it seems to have better compress ratio
+use of https://github.com/ocrmypdf/OCRmyPDF - to get an PDF with text (OCR)
+add sample systemd
 ## Overview
 
 Years ago I bought a Brother multifunction printer and was impressed by the
@@ -40,8 +45,8 @@ Which programs and libraries are needed?
 (in parantheses: Gentoo Linux versions this program was created/tested with and
 an URL for more information)
 
- * python3 (3.6.12, https://www.python.org/)
- * net-snmp (5.9-r2, http://www.net-snmp.org/)
+ * python3 (3.6.12, https://www.python.org/) (debian package python3)
+ * net-snmp (5.9-r2, http://www.net-snmp.org/)  ( debian package snmp)
  * linuxfd  (9999, https://www.github.com/FrankAbelbeck/linuxfd)
 
 Since brotherscankeyd2 is written in Python (currently my favourite

@@ -1,0 +1,16 @@
+[Unit]
+Description=BRSCAN Key
+After=syslog.target network.target
+Requires=
+
+[Service]
+User=root
+Type=forking
+PIDFile=/run/brotherscankeyd2.pid
+ExecStart=/usr/bin/brotherscankeyd2 start
+ExecStop=/usr/bin/brotherscankeyd2 stop
+StandardOutput=journal
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 
