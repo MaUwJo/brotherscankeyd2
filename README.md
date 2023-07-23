@@ -5,10 +5,15 @@ Copyright (C) 2016-2020 Frank Abelbeck <frank.abelbeck@googlemail.com>
 License: GPL 3
 
 ## Changes from MaUwJo
+
 in script bskd2_scan2pdfsw
+
 use of GraphicsMagick (http://www.graphicsmagick.org/) - it seems to have better compress ratio
+
 use of https://github.com/ocrmypdf/OCRmyPDF - to get an PDF with text (OCR)
+
 add sample systemd
+
 ## Overview
 
 Years ago I bought a Brother multifunction printer and was impressed by the
