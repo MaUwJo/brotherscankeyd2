@@ -98,6 +98,7 @@ cd $tmp_dir
 #/usr/bin/convert NAME*" -trim -quality 92 -page A4 "$FILENAMEOCR"
 gm convert -page a4 img-* out.pdf
 ocrmypdf  -l eng+deu out.pdf "$FILENAME"
+chmod 666 "$FILENAME"
 # remove all scanned images
 #/bin/rm "$IMGNAME"*
 
@@ -134,10 +135,3 @@ fi
 # return from tmp
 popd
 
-#scanadf -d "$1" --mode "Black & White" --resolution 300dpi -x 210 -y 297 2> errors.txt > out.txt
-#gm convert -page a4 image-* $timestamp.pdf
-#ocrmypdf  -l eng+deu $timestamp.pdf  $timestamp-ocr.pdf
-#chown brscan:users $timestamp.pdf
-#chown brscan:users $timestamp-ocr.pdf
-#cp   $timestamp-ocr.pdf /home/brscan/brscan/$timestamp-BW.pdf
-#chown brscan:users /home/brscan/brscan/$timestamp-BW.pdf
