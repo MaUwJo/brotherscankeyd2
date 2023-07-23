@@ -4,7 +4,7 @@ Copyright (C) 2016-2020 Frank Abelbeck <frank.abelbeck@googlemail.com>
 
 License: GPL 3
 
-## why i switched from brscan-skey (mqUwJo)
+## why i switched from brscan-skey (MaUwJo)
 
 i enabled wireguard ( https://www.wireguard.com/ ) on my computer, it seems the brother brsan-skey was not able to use the right internal ip adress of my computer(192.168.0.X) . It was using the 2nd adress from WG interface (192.168.20.X) - And when pressing the scan key, the printer was waiting for a scan from 192.168.20.1, but the scan starts with 192.168.0.X ... And scanning wasn't possible anymore. 
 Also I agree on having a binary isn't the best 
